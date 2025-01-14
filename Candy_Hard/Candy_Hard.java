@@ -1,8 +1,10 @@
+package Candy_Hard;
+
 import java.util.*;
 
 class Candy_Hard {
     public static void main(String[] args) {
-        int[] arr = { 1, 9, 3, 2, 5, 4, 5, 2, 1 };
+        int[] arr = { 1, 0, 3, 4, 4, 4, 5, 2, 1 };
         System.out.println(candy(arr));
     }
 
@@ -43,7 +45,6 @@ class Candy_Hard {
         int sumArr = 0;
         for (int i = 0; i < newArr.length; i++) {
             sumArr += newArr[i];
-            newArr[i] += 1;
         }
         System.out.println(Arrays.toString(newArr));
         return nCandies + sumArr;
